@@ -99,8 +99,7 @@ extension LoginViewController: LoginInteractorOutput {
    
     func loginCompleted(user: User) {
         hideSpinner()
-//        delegate?.loginCompleted(user: user)
-        view.show(message: "Logged In")
+        delegate?.loginCompleted(user: user)
     }
     
     func loginFailed(error: Error) {

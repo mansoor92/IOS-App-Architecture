@@ -28,6 +28,12 @@
 		8995AA3C2A3CAB9800E58D65 /* SFProText-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8995AA372A3CAB9800E58D65 /* SFProText-Light.ttf */; };
 		8995AA3D2A3CAB9800E58D65 /* SFProText-Semibold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8995AA382A3CAB9800E58D65 /* SFProText-Semibold.ttf */; };
 		8995AA3E2A3CAB9800E58D65 /* Poppins-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8995AA392A3CAB9800E58D65 /* Poppins-Regular.ttf */; };
+		89E6DE022A42EAC300C5308F /* Profile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 89E6DE012A42EAC300C5308F /* Profile.storyboard */; };
+		89E6DE042A43026B00C5308F /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89E6DE032A43026B00C5308F /* ProfileViewController.swift */; };
+		89E6DE072A43054700C5308F /* Domain.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 89E6DE062A43054700C5308F /* Domain.storyboard */; };
+		89E6DE092A43054F00C5308F /* DomainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89E6DE082A43054F00C5308F /* DomainViewController.swift */; };
+		89E6DE0B2A43062100C5308F /* WebPageDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89E6DE0A2A43062100C5308F /* WebPageDelegate.swift */; };
+		89E6DE0D2A43073B00C5308F /* DomainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89E6DE0C2A43073B00C5308F /* DomainViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -51,6 +57,12 @@
 		8995AA372A3CAB9800E58D65 /* SFProText-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SFProText-Light.ttf"; sourceTree = "<group>"; };
 		8995AA382A3CAB9800E58D65 /* SFProText-Semibold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SFProText-Semibold.ttf"; sourceTree = "<group>"; };
 		8995AA392A3CAB9800E58D65 /* Poppins-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Regular.ttf"; sourceTree = "<group>"; };
+		89E6DE012A42EAC300C5308F /* Profile.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Profile.storyboard; sourceTree = "<group>"; };
+		89E6DE032A43026B00C5308F /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		89E6DE062A43054700C5308F /* Domain.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Domain.storyboard; sourceTree = "<group>"; };
+		89E6DE082A43054F00C5308F /* DomainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DomainViewController.swift; sourceTree = "<group>"; };
+		89E6DE0A2A43062100C5308F /* WebPageDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebPageDelegate.swift; sourceTree = "<group>"; };
+		89E6DE0C2A43073B00C5308F /* DomainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DomainViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -124,16 +136,19 @@
 			isa = PBXGroup;
 			children = (
 				8995AA1C2A3CA3A600E58D65 /* Auth */,
-				8995AA0C2A3C740500E58D65 /* Home */,
+				89E6DE052A43053300C5308F /* PublicApi */,
+				8995AA0C2A3C740500E58D65 /* Profile */,
 			);
 			path = Features;
 			sourceTree = "<group>";
 		};
-		8995AA0C2A3C740500E58D65 /* Home */ = {
+		8995AA0C2A3C740500E58D65 /* Profile */ = {
 			isa = PBXGroup;
 			children = (
+				89E6DE032A43026B00C5308F /* ProfileViewController.swift */,
+				89E6DE012A42EAC300C5308F /* Profile.storyboard */,
 			);
-			path = Home;
+			path = Profile;
 			sourceTree = "<group>";
 		};
 		8995AA192A3C9D2B00E58D65 /* Packages */ = {
@@ -159,6 +174,7 @@
 			children = (
 				8995AA242A3CA59A00E58D65 /* BaseViewController.swift */,
 				8995AA2C2A3CA74800E58D65 /* Extensions.swift */,
+				89E6DE0A2A43062100C5308F /* WebPageDelegate.swift */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -180,6 +196,16 @@
 				8995AA382A3CAB9800E58D65 /* SFProText-Semibold.ttf */,
 			);
 			path = Fonts;
+			sourceTree = "<group>";
+		};
+		89E6DE052A43053300C5308F /* PublicApi */ = {
+			isa = PBXGroup;
+			children = (
+				89E6DE082A43054F00C5308F /* DomainViewController.swift */,
+				89E6DE0C2A43073B00C5308F /* DomainViewModel.swift */,
+				89E6DE062A43054700C5308F /* Domain.storyboard */,
+			);
+			path = PublicApi;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -254,8 +280,10 @@
 				8995AA272A3CA66500E58D65 /* Auth.storyboard in Resources */,
 				8995AA002A3C6FA300E58D65 /* LaunchScreen.storyboard in Resources */,
 				8995A9FD2A3C6FA300E58D65 /* Assets.xcassets in Resources */,
+				89E6DE022A42EAC300C5308F /* Profile.storyboard in Resources */,
 				8995AA3C2A3CAB9800E58D65 /* SFProText-Light.ttf in Resources */,
 				8995AA3D2A3CAB9800E58D65 /* SFProText-Semibold.ttf in Resources */,
+				89E6DE072A43054700C5308F /* Domain.storyboard in Resources */,
 				8995AA3B2A3CAB9800E58D65 /* SFProText-Regular.ttf in Resources */,
 				8995AA3A2A3CAB9800E58D65 /* SFProText-Bold.ttf in Resources */,
 				8995AA3E2A3CAB9800E58D65 /* Poppins-Regular.ttf in Resources */,
@@ -271,11 +299,15 @@
 			files = (
 				8995AA1E2A3CA3B500E58D65 /* LoginViewController.swift in Sources */,
 				8995AA0F2A3C764600E58D65 /* Router.swift in Sources */,
+				89E6DE0B2A43062100C5308F /* WebPageDelegate.swift in Sources */,
+				89E6DE042A43026B00C5308F /* ProfileViewController.swift in Sources */,
 				8995AA202A3CA3EE00E58D65 /* LoginInteractor.swift in Sources */,
 				8995AA222A3CA47200E58D65 /* AppStyle.swift in Sources */,
+				89E6DE0D2A43073B00C5308F /* DomainViewModel.swift in Sources */,
 				8995AA102A3C764600E58D65 /* DependencyContainer.swift in Sources */,
 				8995AA2D2A3CA74800E58D65 /* Extensions.swift in Sources */,
 				8995AA252A3CA59A00E58D65 /* BaseViewController.swift in Sources */,
+				89E6DE092A43054F00C5308F /* DomainViewController.swift in Sources */,
 				8995A9F42A3C6FA200E58D65 /* AppDelegate.swift in Sources */,
 				8995A9F62A3C6FA200E58D65 /* SceneDelegate.swift in Sources */,
 			);

@@ -13,6 +13,14 @@ extension UIStoryboard {
     static func auth() -> UIStoryboard {
         UIStoryboard(name: "Auth", bundle: .main)
     }
+    
+    static func profile() -> UIStoryboard {
+        UIStoryboard(name: "Profile", bundle: .main)
+    }
+    
+    static func domain() -> UIStoryboard {
+        UIStoryboard(name: "Domain", bundle: .main)
+    }
 }
 
 extension UIView {
@@ -97,5 +105,25 @@ extension UIColor {
         UIGraphicsEndImageContext()
 
         return image
+    }
+}
+
+extension UIScrollView {
+    
+    func addSpinner(target: Any, action: Selector, color: UIColor? = nil) {
+        refreshControl = UIRefreshControl()
+        if let color = color {
+            refreshControl?.tintColor = color
+        }
+        refreshControl?.addTarget(target, action: action, for: .valueChanged)
+    }
+    
+    func showSpinner() {
+        setContentOffset(CGPoint(x: 0, y: -100), animated: true)
+        refreshControl?.beginRefreshing()
+    }
+    
+    func hideSpinner() {
+        refreshControl?.endRefreshing()
     }
 }
