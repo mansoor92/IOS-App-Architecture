@@ -9,21 +9,48 @@
 /* Begin PBXBuildFile section */
 		8995A9F42A3C6FA200E58D65 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8995A9F32A3C6FA200E58D65 /* AppDelegate.swift */; };
 		8995A9F62A3C6FA200E58D65 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8995A9F52A3C6FA200E58D65 /* SceneDelegate.swift */; };
-		8995A9F82A3C6FA200E58D65 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8995A9F72A3C6FA200E58D65 /* ViewController.swift */; };
-		8995A9FB2A3C6FA200E58D65 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8995A9F92A3C6FA200E58D65 /* Main.storyboard */; };
 		8995A9FD2A3C6FA300E58D65 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8995A9FC2A3C6FA300E58D65 /* Assets.xcassets */; };
 		8995AA002A3C6FA300E58D65 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8995A9FE2A3C6FA300E58D65 /* LaunchScreen.storyboard */; };
+		8995AA0F2A3C764600E58D65 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8995AA0D2A3C764600E58D65 /* Router.swift */; };
+		8995AA102A3C764600E58D65 /* DependencyContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8995AA0E2A3C764600E58D65 /* DependencyContainer.swift */; };
+		8995AA162A3C9C1D00E58D65 /* IQKeyboardManagerSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 8995AA152A3C9C1D00E58D65 /* IQKeyboardManagerSwift */; };
+		8995AA1E2A3CA3B500E58D65 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8995AA1D2A3CA3B500E58D65 /* LoginViewController.swift */; };
+		8995AA202A3CA3EE00E58D65 /* LoginInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8995AA1F2A3CA3EE00E58D65 /* LoginInteractor.swift */; };
+		8995AA222A3CA47200E58D65 /* AppStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8995AA212A3CA47200E58D65 /* AppStyle.swift */; };
+		8995AA252A3CA59A00E58D65 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8995AA242A3CA59A00E58D65 /* BaseViewController.swift */; };
+		8995AA272A3CA66500E58D65 /* Auth.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8995AA262A3CA66500E58D65 /* Auth.storyboard */; };
+		8995AA2A2A3CA70800E58D65 /* Reusable in Frameworks */ = {isa = PBXBuildFile; productRef = 8995AA292A3CA70800E58D65 /* Reusable */; };
+		8995AA2D2A3CA74800E58D65 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8995AA2C2A3CA74800E58D65 /* Extensions.swift */; };
+		8995AA302A3CA85C00E58D65 /* Toast in Frameworks */ = {isa = PBXBuildFile; productRef = 8995AA2F2A3CA85C00E58D65 /* Toast */; };
+		8995AA332A3CAAFB00E58D65 /* Data in Frameworks */ = {isa = PBXBuildFile; productRef = 8995AA322A3CAAFB00E58D65 /* Data */; };
+		8995AA3A2A3CAB9800E58D65 /* SFProText-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8995AA352A3CAB9800E58D65 /* SFProText-Bold.ttf */; };
+		8995AA3B2A3CAB9800E58D65 /* SFProText-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8995AA362A3CAB9800E58D65 /* SFProText-Regular.ttf */; };
+		8995AA3C2A3CAB9800E58D65 /* SFProText-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8995AA372A3CAB9800E58D65 /* SFProText-Light.ttf */; };
+		8995AA3D2A3CAB9800E58D65 /* SFProText-Semibold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8995AA382A3CAB9800E58D65 /* SFProText-Semibold.ttf */; };
+		8995AA3E2A3CAB9800E58D65 /* Poppins-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8995AA392A3CAB9800E58D65 /* Poppins-Regular.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		8995A9F02A3C6FA200E58D65 /* IOS App Architecture.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "IOS App Architecture.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8995A9F32A3C6FA200E58D65 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8995A9F52A3C6FA200E58D65 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		8995A9F72A3C6FA200E58D65 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		8995A9FA2A3C6FA200E58D65 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8995A9FC2A3C6FA300E58D65 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8995A9FF2A3C6FA300E58D65 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8995AA012A3C6FA300E58D65 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8995AA0D2A3C764600E58D65 /* Router.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
+		8995AA0E2A3C764600E58D65 /* DependencyContainer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DependencyContainer.swift; sourceTree = "<group>"; };
+		8995AA1A2A3C9D2B00E58D65 /* Data */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = Data; path = packages/Data; sourceTree = "<group>"; };
+		8995AA1D2A3CA3B500E58D65 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		8995AA1F2A3CA3EE00E58D65 /* LoginInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginInteractor.swift; sourceTree = "<group>"; };
+		8995AA212A3CA47200E58D65 /* AppStyle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppStyle.swift; sourceTree = "<group>"; };
+		8995AA242A3CA59A00E58D65 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		8995AA262A3CA66500E58D65 /* Auth.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Auth.storyboard; sourceTree = "<group>"; };
+		8995AA2C2A3CA74800E58D65 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		8995AA352A3CAB9800E58D65 /* SFProText-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SFProText-Bold.ttf"; sourceTree = "<group>"; };
+		8995AA362A3CAB9800E58D65 /* SFProText-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SFProText-Regular.ttf"; sourceTree = "<group>"; };
+		8995AA372A3CAB9800E58D65 /* SFProText-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SFProText-Light.ttf"; sourceTree = "<group>"; };
+		8995AA382A3CAB9800E58D65 /* SFProText-Semibold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SFProText-Semibold.ttf"; sourceTree = "<group>"; };
+		8995AA392A3CAB9800E58D65 /* Poppins-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Regular.ttf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +58,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8995AA302A3CA85C00E58D65 /* Toast in Frameworks */,
+				8995AA162A3C9C1D00E58D65 /* IQKeyboardManagerSwift in Frameworks */,
+				8995AA332A3CAAFB00E58D65 /* Data in Frameworks */,
+				8995AA2A2A3CA70800E58D65 /* Reusable in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,8 +71,10 @@
 		8995A9E72A3C6FA200E58D65 = {
 			isa = PBXGroup;
 			children = (
+				8995AA192A3C9D2B00E58D65 /* Packages */,
 				8995A9F22A3C6FA200E58D65 /* IOS App Architecture */,
 				8995A9F12A3C6FA200E58D65 /* Products */,
+				8995AA312A3CAAFB00E58D65 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,15 +89,97 @@
 		8995A9F22A3C6FA200E58D65 /* IOS App Architecture */ = {
 			isa = PBXGroup;
 			children = (
-				8995A9F32A3C6FA200E58D65 /* AppDelegate.swift */,
-				8995A9F52A3C6FA200E58D65 /* SceneDelegate.swift */,
-				8995A9F72A3C6FA200E58D65 /* ViewController.swift */,
-				8995A9F92A3C6FA200E58D65 /* Main.storyboard */,
-				8995A9FC2A3C6FA300E58D65 /* Assets.xcassets */,
-				8995A9FE2A3C6FA300E58D65 /* LaunchScreen.storyboard */,
-				8995AA012A3C6FA300E58D65 /* Info.plist */,
+				8995AA072A3C6FE800E58D65 /* App */,
+				8995AA082A3C700000E58D65 /* Resources */,
+				8995AA232A3CA55A00E58D65 /* Common */,
+				8995AA0B2A3C73FA00E58D65 /* Features */,
 			);
 			path = "IOS App Architecture";
+			sourceTree = "<group>";
+		};
+		8995AA072A3C6FE800E58D65 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				8995A9F32A3C6FA200E58D65 /* AppDelegate.swift */,
+				8995A9F52A3C6FA200E58D65 /* SceneDelegate.swift */,
+				8995AA0E2A3C764600E58D65 /* DependencyContainer.swift */,
+				8995AA0D2A3C764600E58D65 /* Router.swift */,
+				8995AA212A3CA47200E58D65 /* AppStyle.swift */,
+				8995AA012A3C6FA300E58D65 /* Info.plist */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		8995AA082A3C700000E58D65 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				8995AA342A3CAB8B00E58D65 /* Fonts */,
+				8995A9FC2A3C6FA300E58D65 /* Assets.xcassets */,
+				8995A9FE2A3C6FA300E58D65 /* LaunchScreen.storyboard */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		8995AA0B2A3C73FA00E58D65 /* Features */ = {
+			isa = PBXGroup;
+			children = (
+				8995AA1C2A3CA3A600E58D65 /* Auth */,
+				8995AA0C2A3C740500E58D65 /* Home */,
+			);
+			path = Features;
+			sourceTree = "<group>";
+		};
+		8995AA0C2A3C740500E58D65 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		8995AA192A3C9D2B00E58D65 /* Packages */ = {
+			isa = PBXGroup;
+			children = (
+				8995AA1A2A3C9D2B00E58D65 /* Data */,
+			);
+			name = Packages;
+			sourceTree = "<group>";
+		};
+		8995AA1C2A3CA3A600E58D65 /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+				8995AA1D2A3CA3B500E58D65 /* LoginViewController.swift */,
+				8995AA1F2A3CA3EE00E58D65 /* LoginInteractor.swift */,
+				8995AA262A3CA66500E58D65 /* Auth.storyboard */,
+			);
+			path = Auth;
+			sourceTree = "<group>";
+		};
+		8995AA232A3CA55A00E58D65 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				8995AA242A3CA59A00E58D65 /* BaseViewController.swift */,
+				8995AA2C2A3CA74800E58D65 /* Extensions.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		8995AA312A3CAAFB00E58D65 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8995AA342A3CAB8B00E58D65 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				8995AA392A3CAB9800E58D65 /* Poppins-Regular.ttf */,
+				8995AA352A3CAB9800E58D65 /* SFProText-Bold.ttf */,
+				8995AA372A3CAB9800E58D65 /* SFProText-Light.ttf */,
+				8995AA362A3CAB9800E58D65 /* SFProText-Regular.ttf */,
+				8995AA382A3CAB9800E58D65 /* SFProText-Semibold.ttf */,
+			);
+			path = Fonts;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,6 +198,12 @@
 			dependencies = (
 			);
 			name = "IOS App Architecture";
+			packageProductDependencies = (
+				8995AA152A3C9C1D00E58D65 /* IQKeyboardManagerSwift */,
+				8995AA292A3CA70800E58D65 /* Reusable */,
+				8995AA2F2A3CA85C00E58D65 /* Toast */,
+				8995AA322A3CAAFB00E58D65 /* Data */,
+			);
 			productName = "IOS App Architecture";
 			productReference = 8995A9F02A3C6FA200E58D65 /* IOS App Architecture.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +232,11 @@
 				Base,
 			);
 			mainGroup = 8995A9E72A3C6FA200E58D65;
+			packageReferences = (
+				8995AA142A3C9C1D00E58D65 /* XCRemoteSwiftPackageReference "IQKeyboardManager" */,
+				8995AA282A3CA70800E58D65 /* XCRemoteSwiftPackageReference "Reusable" */,
+				8995AA2E2A3CA85C00E58D65 /* XCRemoteSwiftPackageReference "Toast-Swift" */,
+			);
 			productRefGroup = 8995A9F12A3C6FA200E58D65 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -125,9 +251,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8995AA272A3CA66500E58D65 /* Auth.storyboard in Resources */,
 				8995AA002A3C6FA300E58D65 /* LaunchScreen.storyboard in Resources */,
 				8995A9FD2A3C6FA300E58D65 /* Assets.xcassets in Resources */,
-				8995A9FB2A3C6FA200E58D65 /* Main.storyboard in Resources */,
+				8995AA3C2A3CAB9800E58D65 /* SFProText-Light.ttf in Resources */,
+				8995AA3D2A3CAB9800E58D65 /* SFProText-Semibold.ttf in Resources */,
+				8995AA3B2A3CAB9800E58D65 /* SFProText-Regular.ttf in Resources */,
+				8995AA3A2A3CAB9800E58D65 /* SFProText-Bold.ttf in Resources */,
+				8995AA3E2A3CAB9800E58D65 /* Poppins-Regular.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,7 +269,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8995A9F82A3C6FA200E58D65 /* ViewController.swift in Sources */,
+				8995AA1E2A3CA3B500E58D65 /* LoginViewController.swift in Sources */,
+				8995AA0F2A3C764600E58D65 /* Router.swift in Sources */,
+				8995AA202A3CA3EE00E58D65 /* LoginInteractor.swift in Sources */,
+				8995AA222A3CA47200E58D65 /* AppStyle.swift in Sources */,
+				8995AA102A3C764600E58D65 /* DependencyContainer.swift in Sources */,
+				8995AA2D2A3CA74800E58D65 /* Extensions.swift in Sources */,
+				8995AA252A3CA59A00E58D65 /* BaseViewController.swift in Sources */,
 				8995A9F42A3C6FA200E58D65 /* AppDelegate.swift in Sources */,
 				8995A9F62A3C6FA200E58D65 /* SceneDelegate.swift in Sources */,
 			);
@@ -147,14 +284,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		8995A9F92A3C6FA200E58D65 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				8995A9FA2A3C6FA200E58D65 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		8995A9FE2A3C6FA300E58D65 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -288,10 +417,9 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "IOS App Architecture/Info.plist";
+				INFOPLIST_FILE = "IOS App Architecture/App/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -315,10 +443,9 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "IOS App Architecture/Info.plist";
+				INFOPLIST_FILE = "IOS App Architecture/App/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -356,6 +483,55 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		8995AA142A3C9C1D00E58D65 /* XCRemoteSwiftPackageReference "IQKeyboardManager" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/hackiftekhar/IQKeyboardManager.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+		8995AA282A3CA70800E58D65 /* XCRemoteSwiftPackageReference "Reusable" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/AliSoftware/Reusable";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+		8995AA2E2A3CA85C00E58D65 /* XCRemoteSwiftPackageReference "Toast-Swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/scalessec/Toast-Swift";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		8995AA152A3C9C1D00E58D65 /* IQKeyboardManagerSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8995AA142A3C9C1D00E58D65 /* XCRemoteSwiftPackageReference "IQKeyboardManager" */;
+			productName = IQKeyboardManagerSwift;
+		};
+		8995AA292A3CA70800E58D65 /* Reusable */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8995AA282A3CA70800E58D65 /* XCRemoteSwiftPackageReference "Reusable" */;
+			productName = Reusable;
+		};
+		8995AA2F2A3CA85C00E58D65 /* Toast */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8995AA2E2A3CA85C00E58D65 /* XCRemoteSwiftPackageReference "Toast-Swift" */;
+			productName = Toast;
+		};
+		8995AA322A3CAAFB00E58D65 /* Data */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = Data;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 8995A9E82A3C6FA200E58D65 /* Project object */;
 }

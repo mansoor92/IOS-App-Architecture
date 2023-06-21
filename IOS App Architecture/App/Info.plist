@@ -15,11 +15,18 @@
 					<string>Default Configuration</string>
 					<key>UISceneDelegateClassName</key>
 					<string>$(PRODUCT_MODULE_NAME).SceneDelegate</string>
-					<key>UISceneStoryboardFile</key>
-					<string>Main</string>
 				</dict>
 			</array>
 		</dict>
 	</dict>
+    
+    <key>UIAppFonts</key>
+    <array>
+        <string>Poppins-Regular.ttf</string>
+        <string>SFProText-Light.ttf</string>
+        <string>SFProText-Bold.ttf</string>
+        <string>SFProText-Regular.ttf</string>
+        <string>SFProText-Semibold.ttf</string>
+    </array>
 </dict>
 </plist>
