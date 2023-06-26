@@ -41,6 +41,3 @@ The project utilizes the following third-party libraries for enhanced functional
 * **[IQKeyboardManagerSwift](https://github.com/hackiftekhar/IQKeyboardManager):** A library that simplifies keyboard handling and provides a seamless typing experience.
 * **[Reusable](https://github.com/AliSoftware/Reusable):** A library that enhances code reusability by providing a protocol-based approach for handling reusable views and cells.
 * **[Toast](https://github.com/scalessec/Toast-Swift):** A library for displaying toast notifications, providing visual feedback to users.
-
-
-## H
