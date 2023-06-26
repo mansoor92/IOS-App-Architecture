@@ -1,44 +1,47 @@
-![iOS App Architecture](https://github.com/realm/realm-swift/raw/master/logo.png)
+![iOS App Architecture](https://github.com/mansoor92/IOS-App-Architecture/master/logo.png)
 
-iOS App Architecture is a base project for iOS Applications. It defines different layers of project providing losely coupled code using familiar design patterns. Reduces project setup time for fast paced development
+iOS App Architecture is designed to provide a structured approach and loosely coupled code using familiar design patterns. It aims to establish a solid foundation for iOS development, allowing developers to quickly set up projects, enable fast-paced development and focus on building robust and scalable applications.
 
 ## Components
 
-1. [Data](#data)
+1. [Data Layer](#data)
 2. [Dependency Container](#dependency-container)
 3. [Router](#router)
-4. [UI Layer MVVM](#ui-layer)
-5. [ThirdParty Dependencies](#thirdparty-dependencies)
+4. [UI Layer with MVVM](#ui-layer)
+5. [Third-Party Dependencies](#thirdparty-dependencies)
 
+### <a id="data">Data Layer</a>
+The Data Layer is responsible for managing local and remote data within the application. It follows the repository pattern, utilizing protocols and the factory pattern for flexible and decoupled data management. The key components of the Data Layer include:
 
-### <a id="data">Data</a>
-Data layer manages local and remote data. It is added as a swift package to the project. It uses repository pattern, protocols and factory pattern. Following are components used
-
-* **Repositories:** A repository is defined using a <b>protocol</b> which provide us a blue print. A <b>class</b> conforms to repository protocol and provide it's implemetations. A <b>factory class</b> then provides a single make method which returns instance of repository. This allows to hide concrete classes from client.
-* **Store:** If both local and remote data is manage by a repository then a Local and a Remote class are defined. These are then managed by a store which conforms to repository protocol.
-* **Models:** Models are usually struct that define data models for <em>REST API's</em> or <em>Persistance Storage</em>.
-* **RequestModel:** It provides implementation of network layer. Currently it uses a light weight swift package <b>[Api Client](https://github.com/mansoor92/ApiClient)</b> but you can replace it with any library without making changes in repositories.
+* **Repositories:** Repositories define protocols that act as blueprints for data management. Concrete classes implement these protocols, providing the actual implementation details. A factory class is used to create instances of repositories, hiding the concrete classes from the clients.
+* **Store:** If both local and remote data need to be managed, separate Local and Remote classes are defined. These classes implement the repository protocols and are managed by a store, which also conforms to the repository protocol.
+* **Models:** Models are typically defined as structs, representing the data models for REST APIs or persistence storage.
+* **RequestModel:** It provides the implementation of the network layer. Currently, the project uses the lightweight Swift package [Api Client](https://github.com/mansoor92/ApiClient) for network requests. However, you can easily replace it with any other networking library without making changes to the repositories.
 
 ### <a id="dependency-container">Dependency Container</a>
-It manages all the dependencies of the application.It contains instances of <b>Request Model</b>, any <b>Persistance Storage</b> and repositories.It is initialize in <em>SceneDelegate</em> of application.
+The Dependency Container manages all the dependencies within the application. It holds instances of the Request Model, Persistence Storage, and repositories. It is initialized in the SceneDelegate of the application, ensuring proper dependency injection throughout the app.
 
 ### <a id="router">Router</a>
-It manages all the navigation in the application. It initializes <em>ViewControllers</em> and displays them on the screen.
+The Router handles the navigation flow within the application. It is responsible for initializing view controllers and displaying them on the screen based on user actions or events.
 
-### <a id="ui-layer">UI Layer</a>
-UI Layer contains all the views in the application. It uses MVVM to separate the code to create a view and it's business logic. It consists of following components
+### <a id="ui-layer">UI Layer with MVVM</a>
+The UI Layer follows the MVVM (Model-View-ViewModel) pattern, separating the code responsible for creating views and managing their associated business logic. The key components of the UI Layer include:
 
-* **ViewModelInput<Protocol>:** Defines input method for the view model. It is used by view to send events to viewModel.
-* **ViewModelOutput<Protocol>:** Defines output method for the view model. It is used by view model to send data updates to view.
-<p><em>ViewModelInput</em> and <em>ViewModelOuput</em> protocols are used for communication between view and view model while providing loose coupling.</p>
-* **View/ViewController:** It contains code to create and update view. View implements <em>ViewModelOutput</em> to receive data updates from view model. It also contains an instance of a view model to update data according to user actions.
-* **ViewModel:** It stores data and manages operations on data. It contains instance of repository to fetch and manage data. It also contains reference to view to send updates when data is changed.
-* **ViewComposer:** View Composer contains a single make method which initialize view, view model and communication between them. It is used by router to initialize view controllers.
+* **ViewModelInput<Protocol>:** This protocol defines input methods for the view model, allowing the view to send events or user interactions to the view model.
+* **ViewModelOutput<Protocol>:** This protocol defines output methods for the view model, enabling the view model to send data updates or state changes to the view.
+  The ViewModelInput and ViewModelOutput protocols facilitate communication between the view and the view model, ensuring loose coupling and separation of concerns.
+* **View/ViewController:** The view or view controller is responsible for creating and updating the view. It implements the ViewModelOutput protocol to receive data updates from the view model. Additionally, it holds an instance of the view model to handle user interactions and update the data accordingly.
+* **ViewModel:** The view model stores data and manages the operations related to that data. It contains a reference to the repository for fetching and managing data. The view model communicates with the view through the ViewModelOutput protocol to provide updates when the data changes.
+* **ViewComposer:** The View Composer is a helper class that provides a single make method for initializing the view, view model, and establishing communication between them. It is used by the router to initialize view controllers.
 
-### <a id="thirdparty-dependencies">ThirdParty Dependencies</a>
-This project uses following thirdparty libraries
+### <a id="thirdparty-dependencies">Third-Party Dependencies</a>
+The project utilizes the following third-party libraries for
 
-* **[ApiClient](https://github.com/mansoor92/ApiClient)** 
-* **[IQKeyboardManagerSwift](https://github.com/hackiftekhar/IQKeyboardManager)** 
-* **[Reusable](https://github.com/AliSoftware/Reusable)** 
-* **[Toast](https://github.com/scalessec/Toast-Swift)** 
+ enhanced functionality:
+
+* **[ApiClient](https://github.com/mansoor92/ApiClient):** A lightweight Swift package used for network requests.
+* **[IQKeyboardManagerSwift](https://github.com/hackiftekhar/IQKeyboardManager):** A library that simplifies keyboard handling and provides a seamless typing experience.
+* **[Reusable](https://github.com/AliSoftware/Reusable):** A library that enhances code reusability by providing a protocol-based approach for handling reusable views and cells.
+* **[Toast](https://github.com/scalessec/Toast-Swift):** A library for displaying toast notifications, providing visual feedback to users.
+
+This iOS App Architecture project aims to establish a solid foundation for iOS development, allowing developers to quickly set up projects and focus on building robust and scalable applications.
