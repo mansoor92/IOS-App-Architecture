@@ -1,0 +1,41 @@
+{
+  "pins" : [
+    {
+      "identity" : "apiclient",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/mansoor92/ApiClient",
+      "state" : {
+        "branch" : "async-await",
+        "revision" : "38cfe5fb692bb4a182d7ea0d6da76904156da158"
+      }
+    },
+    {
+      "identity" : "iqkeyboardmanager",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/hackiftekhar/IQKeyboardManager.git",
+      "state" : {
+        "branch" : "master",
+        "revision" : "ea08e08958890043019d248065fe3d825f338087"
+      }
+    },
+    {
+      "identity" : "reusable",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/AliSoftware/Reusable",
+      "state" : {
+        "branch" : "main",
+        "revision" : "85e8ef7b2441433ffed2fc8cf4942961b70a83f6"
+      }
+    },
+    {
+      "identity" : "toast-swift",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/scalessec/Toast-Swift",
+      "state" : {
+        "branch" : "master",
+        "revision" : "0c9493eeacb102cc614da385cfaaf475379f4ab4"
+      }
+    }
+  ],
+  "version" : 2
+}
