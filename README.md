@@ -35,13 +35,12 @@ The UI Layer follows the MVVM (Model-View-ViewModel) pattern, separating the cod
 * **ViewComposer:** The View Composer is a helper class that provides a single make method for initializing the view, view model, and establishing communication between them. It is used by the router to initialize view controllers.
 
 ### <a id="thirdparty-dependencies">Third-Party Dependencies</a>
-The project utilizes the following third-party libraries for
-
- enhanced functionality:
+The project utilizes the following third-party libraries for enhanced functionality:
 
 * **[ApiClient](https://github.com/mansoor92/ApiClient):** A lightweight Swift package used for network requests.
 * **[IQKeyboardManagerSwift](https://github.com/hackiftekhar/IQKeyboardManager):** A library that simplifies keyboard handling and provides a seamless typing experience.
 * **[Reusable](https://github.com/AliSoftware/Reusable):** A library that enhances code reusability by providing a protocol-based approach for handling reusable views and cells.
 * **[Toast](https://github.com/scalessec/Toast-Swift):** A library for displaying toast notifications, providing visual feedback to users.
 
-This iOS App Architecture project aims to establish a solid foundation for iOS development, allowing developers to quickly set up projects and focus on building robust and scalable applications.
+
+## H

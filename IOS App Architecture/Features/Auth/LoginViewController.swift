@@ -13,7 +13,7 @@ class LoginViewComposer {
     
     static func compose(repository: AuthRepository) -> LoginViewController {
         let view = LoginViewController.instantiate()
-        let interactor = LoginInteractor(repository: repository, presenter: view)
+        let interactor = LoginViewModel(repository: repository, presenter: view)
         view.interactor = interactor
         return view
     }
@@ -28,13 +28,14 @@ class LoginViewController: BaseViewController, StoryboardSceneBased {
     static var sceneStoryboard = UIStoryboard.auth()
     
     // MARK: Outlets
+    @IBOutlet weak var card: UIView!
     @IBOutlet weak var email: UITextField!
     @IBOutlet weak var password: UITextField!
     @IBOutlet weak var login: UIButton!
     @IBOutlet weak var spinner: UIActivityIndicatorView!
     
     // MARK: - Properties
-    var interactor: LoginInteractorInput!
+    var interactor: LoginViewModelInput!
     weak var delegate: LoginViewControllerDelegate?
     override var preferredStatusBarStyle: UIStatusBarStyle { .darkContent }
     
@@ -47,6 +48,7 @@ class LoginViewController: BaseViewController, StoryboardSceneBased {
     
     // MARK: - UI
     private func configureView() {
+        card.layer.addShadow(opacity: 0.2)
         email.keyboardType = .emailAddress
         email.returnKeyType = .next
         configure(field: email, placeholder: "Email")
@@ -95,7 +97,8 @@ class LoginViewController: BaseViewController, StoryboardSceneBased {
     }
 }
 
-extension LoginViewController: LoginInteractorOutput {
+// MARK: - LoginViewModelOutput
+extension LoginViewController: LoginViewModelOutput {
    
     func loginCompleted(user: User) {
         hideSpinner()
@@ -108,6 +111,7 @@ extension LoginViewController: LoginInteractorOutput {
     }
 }
 
+// MARK: - UITextFieldDelegate
 extension LoginViewController: UITextFieldDelegate {
     
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {

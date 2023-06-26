@@ -127,3 +127,21 @@ extension UIScrollView {
         refreshControl?.endRefreshing()
     }
 }
+
+extension CALayer {
+    
+    func addBottomShadow(color: UIColor = .black) {
+        shadowRadius = 2.5
+        shadowOpacity = 0.1
+        shadowColor = color.cgColor
+        shadowOffset = CGSize(width: 0 , height: 2)
+    }
+    
+    func addShadow(color: UIColor = UIColor.black, opacity: Float = 0.6, radius: CGFloat = 5) {
+        shadowColor = color.cgColor
+        shadowRadius = radius
+        shadowOpacity = opacity
+        masksToBounds = false
+        shadowOffset = CGSize(width: 0, height: 0)
+    }
+}

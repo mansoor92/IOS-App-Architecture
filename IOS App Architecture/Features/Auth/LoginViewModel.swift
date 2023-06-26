@@ -8,27 +8,27 @@
 import Foundation
 import Data
 
-protocol LoginInteractorInput {
+protocol LoginViewModelInput {
     func login(with credential: UserCredential)
 }
 
-protocol LoginInteractorOutput: AnyObject {
+protocol LoginViewModelOutput: AnyObject {
     func loginCompleted(user: User)
     func loginFailed(error: Error)
 }
 
-class LoginInteractor {
+class LoginViewModel {
     
     private let repository: AuthRepository
-    private weak var presenter: LoginInteractorOutput?
+    private weak var presenter: LoginViewModelOutput?
     
-    init(repository: AuthRepository, presenter: LoginInteractorOutput) {
+    init(repository: AuthRepository, presenter: LoginViewModelOutput) {
         self.repository = repository
         self.presenter = presenter
     }
 }
 
-extension LoginInteractor: LoginInteractorInput {
+extension LoginViewModel: LoginViewModelInput {
     
     func login(with credential: UserCredential) {
         Task {

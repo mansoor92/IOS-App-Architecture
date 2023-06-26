@@ -36,7 +36,7 @@ extension DomainViewModel: DomainViewModelInput {
     func loadDomains(forceRefresh: Bool) {
         Task {
             do {
-                self.domains = try await repository.getDomains(forceRefresh: forceRefresh)
+                self.domains = try await repository.getDomains(forceRefresh: forceRefresh, category: "science")
                 await MainActor.run {
                     self.view?.domainsLoaded()
                 }

@@ -49,7 +49,7 @@ class Router: NSObject {
         }
         tabBarController.viewControllers = viewControllers
         tabBarController.tabBar.tintColor = AppStyle.primary
-        tabBarController.tabBar.barTintColor = .blue
+        tabBarController.tabBar.barTintColor = .white
         tabBarController.tabBar.backgroundColor = .white
         tabBarController.tabBar.unselectedItemTintColor = .lightGray
         tabBarController.tabBar.isTranslucent = false

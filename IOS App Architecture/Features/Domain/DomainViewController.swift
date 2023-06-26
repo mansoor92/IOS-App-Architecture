@@ -8,6 +8,7 @@
 import UIKit
 import Reusable
 import Data
+import Toast
 
 class DomainViewComposer {
     
@@ -27,7 +28,6 @@ class DomainViewController: BaseViewController, StoryboardSceneBased {
     @IBOutlet weak var tableView: UITableView!
     
     // MARK: - Properties
-    private let cellReuseIdentifier = "cell"
     var viewModel: DomainViewModel!
     weak var delegate: WebPageDelegate?
 
@@ -43,8 +43,7 @@ class DomainViewController: BaseViewController, StoryboardSceneBased {
         navigationItem.title = "Domains"
         tableView.dataSource = self
         tableView.delegate = self
-        tableView.register(UITableViewCell.self, forCellReuseIdentifier: cellReuseIdentifier)
-        tableView.rowHeight = 32
+        tableView.estimatedRowHeight = UITableView.automaticDimension
         tableView.addSpinner(target: self, action: #selector(onRefresh))
     }
     
@@ -79,11 +78,8 @@ extension DomainViewController: UITableViewDataSource, UITableViewDelegate {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: cellReuseIdentifier, for: indexPath)
-        let item = viewModel.item(position: indexPath.row)
-//        cell.largeContentTitle = item.api
-        cell.textLabel?.text = item.api
-        cell.detailTextLabel?.text = item.description
+        let cell: DomainCell = tableView.dequeueReusableCell(for: indexPath)
+        cell.set(domain: viewModel.item(position: indexPath.row))
         return cell
     }
     

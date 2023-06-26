@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21678"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
@@ -20,7 +21,7 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ypb-xW-In6" userLabel="fields View">
                                 <rect key="frame" x="16" y="123" width="361" height="109"/>
                                 <subviews>
-                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="mali92390@gmail.com" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="gXh-Tz-6sD" customClass="CustomInsetField" customModule="IOS_App_Architecture" customModuleProvider="target">
+                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="dummy@gmail.com" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="gXh-Tz-6sD" customClass="CustomInsetField" customModule="IOS_App_Architecture" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="361" height="54"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="54" id="ACh-4C-51g"/>
@@ -50,7 +51,7 @@
                                         </connections>
                                     </textField>
                                 </subviews>
-                                <color key="backgroundColor" systemColor="systemGray4Color"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstItem="RbX-gK-qyV" firstAttribute="top" secondItem="gXh-Tz-6sD" secondAttribute="bottom" constant="-5" id="06r-Mi-CCY"/>
                                     <constraint firstItem="RbX-gK-qyV" firstAttribute="leading" secondItem="gXh-Tz-6sD" secondAttribute="leading" id="2hF-oj-auV"/>
@@ -66,14 +67,15 @@
                                 </constraints>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                        <integer key="value" value="8"/>
+                                        <integer key="value" value="20"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="P0Q-hS-hri" customClass="PrimaryButton" customModule="IOS_App_Architecture" customModuleProvider="target">
-                                <rect key="frame" x="164.66666666666666" y="248" width="64" height="30"/>
+                                <rect key="frame" x="146.66666666666666" y="248" width="100" height="40"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="64" id="sW1-Sn-SAc"/>
+                                    <constraint firstAttribute="height" constant="40" id="HcE-Vf-zjs"/>
+                                    <constraint firstAttribute="width" constant="100" id="aUc-Bu-D6f"/>
                                 </constraints>
                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                 <state key="normal" title="Login"/>
@@ -82,7 +84,7 @@
                                 </connections>
                             </button>
                             <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="medium" translatesAutoresizingMaskIntoConstraints="NO" id="rIE-sz-wJN">
-                                <rect key="frame" x="244.66666666666666" y="253" width="19.999999999999972" height="20"/>
+                                <rect key="frame" x="262.66666666666669" y="258" width="20" height="20"/>
                             </activityIndicatorView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="fZn-wz-y4Q"/>
@@ -98,6 +100,7 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="card" destination="ypb-xW-In6" id="21I-wt-h53"/>
                         <outlet property="email" destination="gXh-Tz-6sD" id="u2W-p0-ehb"/>
                         <outlet property="login" destination="P0Q-hS-hri" id="jDi-1S-k1V"/>
                         <outlet property="password" destination="WZu-af-6Sb" id="2HB-Mw-WdS"/>
@@ -115,9 +118,6 @@
         </namedColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
-        <systemColor name="systemGray4Color">
-            <color red="0.81960784313725488" green="0.81960784313725488" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

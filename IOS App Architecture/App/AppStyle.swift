@@ -11,8 +11,8 @@ class AppStyle {
     static let accent = Font(name: "Poppins-Regular")
     
     // MARK: - Colors
-    static let primary = UIColor(hexString: "#A62648")
-    static let background = UIColor(hexString: "#F6F5F1")
+    static let primary = UIColor.purple
+    static let background = UIColor.systemGray6
     static let textColor = UIColor(hexString: "#171717")
     
     // MARK: - Other styles
