@@ -1,4 +1,4 @@
-![iOS App Architecture](https://github.com/mansoor92/IOS-App-Architecture/main/logo.png)
+![iOS App Architecture](https://github.com/mansoor92/IOS-App-Architecture/blob/main/logo.png)
 
 iOS App Architecture is designed to provide a structured approach and loosely coupled code using familiar design patterns. It aims to establish a solid foundation for iOS development, allowing developers to quickly set up projects, enable fast-paced development and focus on building robust and scalable applications.
 
